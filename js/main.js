@@ -1,8 +1,8 @@
 import * as THREE from 'three';
 
 import WebGL from 'three/addons/capabilities/WebGL.js';
-import cube from './components/cube.js';
-import someLines from './components/lines.js';
+import Cube from './components/cube.js';
+import Lines from './components/lines.js';
 const scene = new THREE.Scene(); // create a new Threejs scene
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000); // create a new camera
 /* the camera has 4 parameters:
@@ -13,12 +13,12 @@ const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerH
 */
 const renderer = new THREE.WebGLRenderer();
 
-const line = new someLines(); // create a new instance of the lines class
-
+const lines = new Lines(); // create a new instance of the lines class
+const cube = new Cube(); // create a new instance of the cube class
 renderer.setSize(window.innerWidth, window.innerHeight); // set the size of the renderer to the window size
 document.body.appendChild(renderer.domElement); // append the renderer to the body of the documents
 // scene.add(cube); // add the cube to the scene
-scene.add(line); // add the lines to the Scene
+scene.add(lines); // add the lines to the Scene
 camera.position.z = 5; // set the camera position
 
 

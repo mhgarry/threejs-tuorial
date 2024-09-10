@@ -1,6 +1,6 @@
 import * as THREE from 'three';
 
-export class SomeLines extends THREE.Line {
+export class Lines extends THREE.Line {
   constructor() {
     const geometry = new THREE.BufferGeometry();
     const material = new THREE.LineBasicMaterial({ color: 0x0000ff });
@@ -13,4 +13,4 @@ export class SomeLines extends THREE.Line {
   }
 }
 
-export default SomeLines; // export the lines
+export default Lines; // export the lines
