@@ -10,6 +10,8 @@ export class Lines extends THREE.Line {
     points.push(new THREE.Vector3(1, 0, 0));
     geometry.setFromPoints(points);
     super(geometry, material);
+
+    
   }
 }
 

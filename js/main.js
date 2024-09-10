@@ -18,7 +18,7 @@ const cube = new Cube(); // create a new instance of the cube class
 renderer.setSize(window.innerWidth, window.innerHeight); // set the size of the renderer to the window size
 document.body.appendChild(renderer.domElement); // append the renderer to the body of the documents
 // scene.add(cube); // add the cube to the scene
-scene.add(lines); // add the lines to the Scene
+scene.add(lines,cube); // add the lines to the Scene
 camera.position.z = 5; // set the camera position
 
 
